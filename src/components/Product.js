@@ -18,7 +18,7 @@ function Product({ product }) {
             <Card.Text as='div'>
                 <div className='my-3'>
                     {/* implement a randomizer for the ratings */}
-                    <Rating value={product.rating} text={`${product.numReviews} reviews`} color={'#b2beb5'}/>
+                    <Rating value={product.rating} text={`${product.numReviews} reviews`} color={'#FFC300'}/>
                 </div>
             </Card.Text>
             <Card.Text as='h3'>
