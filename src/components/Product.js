@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
+import Rating from './Rating'
 
 
 function Product({ product }) {
@@ -17,8 +18,11 @@ function Product({ product }) {
             <Card.Text as='div'>
                 <div className='my-3'>
                     {/* implement a randomizer for the ratings */}
-                    {product.rating} from {product.numReviews} reviews
+                    <Rating value={product.rating} text={`${product.numReviews} reviews`} color={'#b2beb5'}/>
                 </div>
+            </Card.Text>
+            <Card.Text as='h3'>
+                ${[product.price]}
             </Card.Text>
         </Card.Body>
     </Card>
