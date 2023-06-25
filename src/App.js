@@ -10,7 +10,8 @@ function App() {
       <Header/>
       <main className='py-3'>
         <Container>
-          <h1>Welcome Brooks</h1>
+          {/* add ref for whoever is logged in */}
+          <h4>Welcome Brooks</h4>
           <HomeScreen/>
         </Container>
       </main>
