@@ -14,6 +14,7 @@ function ProductScreen({ match }) {
         }
 
         fetchProduct()
+        //Dep Array lint error
     }, [])
     // const product = products.find((p) => p._id === match.params.id)
     return (
