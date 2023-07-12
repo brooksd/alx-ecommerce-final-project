@@ -7,13 +7,8 @@ import { productListReducer, productDetailsReducer, productDeleteReducer, produc
 
 import { cartReducer } from './reducers/cartReducers'
 
-import {
-    userLoginReducer,
-    userRegisterReducer,
-    userDetailsReducer,
-    userUpdateProfileReducer,
-    userListReducer,
-    userDeleteReducer,
+import { userLoginReducer, userRegisterReducer, userDetailsReducer,
+    userUpdateProfileReducer, userListReducer, userDeleteReducer,
     userUpdateReducer,
 } from './reducers/userReducers'
 
