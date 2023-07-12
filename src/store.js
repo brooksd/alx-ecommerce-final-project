@@ -1,14 +1,8 @@
 import { legacy_createStore, combineReducers, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import {
-    productListReducer,
-    productDetailsReducer,
-    productDeleteReducer,
-    productCreateReducer,
-    productUpdateReducer,
-    productReviewCreateReducer,
-    productTopRatedReducer,
+import { productListReducer, productDetailsReducer, productDeleteReducer, productCreateReducer,
+    productUpdateReducer, productReviewCreateReducer, productTopRatedReducer,
 } from './reducers/productReducers'
 
 import { cartReducer } from './reducers/cartReducers'
