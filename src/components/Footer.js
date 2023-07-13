@@ -5,7 +5,7 @@ export default function Footer() {
 	return (
 		<Container>
 			<Row>
-				<Col className="text-center py-3">Copyright &copy; ProShop</Col>
+				<Col className="text-center py-3">Copyright &copy; ALX Audio 2023</Col>
 			</Row>
 		</Container>
 	)
