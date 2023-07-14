@@ -33,7 +33,7 @@ export default function OrderScreen({ match, history }) {
     const addPayPalScript = () => {
         const script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = `https://www.paypal.com/sdk/js?client-id=${process.env.REACT_APP_CLIENT_ID}`;
+        script.src = `https://www.paypal.com/sdk/js?client-id=AXBiwLPU0tdJO17HhhuqN9IAl_SR6kZ9xLQ4DBUdfW7ES9UU_Bgads5N6vwOZ655tJOSqeEPQqQpF92d`;
         script.async = true;
         script.onload = () => {
             setSdkReady(true);
