@@ -2,7 +2,7 @@ import React from 'react';
 import SearchBox from './SearchBox';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../actions/userActions';
-import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Container, Navbar, Nav, NavDropdown, Col, Row } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 export default function Header() {
@@ -19,9 +19,14 @@ export default function Header() {
 	return (
 		<Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
 			<Container>
-				<LinkContainer to="/">
-					<Navbar.Brand href="/">ALX Audio</Navbar.Brand>
-				</LinkContainer>
+				<Row>
+					<Col>
+						<LinkContainer to="/">
+							<Navbar.Brand href="/">ALX Audio</Navbar.Brand>
+						</LinkContainer>
+					</Col>
+				</Row>
+						<SearchBox />
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="mr-auto">
@@ -55,7 +60,6 @@ export default function Header() {
 							</NavDropdown>
 						)}
 					</Nav>
-					<SearchBox />
 				</Navbar.Collapse>
 			</Container>
 		</Navbar>
