@@ -142,25 +142,25 @@ export default function OrderScreen({ match, history }) {
                                 <ListGroup.Item>
                                     <Row>
                                         <Col>Items: </Col>
-                                        <Col>${order.itemsPrice}</Col>
+                                        <Col>Ksh. {order.itemsPrice}</Col>
                                     </Row>
                                 </ListGroup.Item>
                                 <ListGroup.Item>
                                     <Row>
                                         <Col>Shipping: </Col>
-                                        <Col>${order.shippingPrice}</Col>
+                                        <Col>Ksh. {order.shippingPrice}</Col>
                                     </Row>
                                 </ListGroup.Item>
                                 <ListGroup.Item>
                                     <Row>
                                         <Col>Tax: </Col>
-                                        <Col>${order.taxPrice}</Col>
+                                        <Col>Ksh. {order.taxPrice}</Col>
                                     </Row>
                                 </ListGroup.Item>
                                 <ListGroup.Item>
                                     <Row>
                                         <Col>Total: </Col>
-                                        <Col>${order.totalPrice}</Col>
+                                        <Col>Ksh. {order.totalPrice}</Col>
                                     </Row>
                                 </ListGroup.Item>
                                 {!order.isPaid && <ListGroup.Item>
