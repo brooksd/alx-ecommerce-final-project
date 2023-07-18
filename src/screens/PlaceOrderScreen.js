@@ -82,7 +82,7 @@ export default function PlaceOrderScreen({ history }) {
 													<Link to={`/product/${item.product}`}>{item.name}</Link>
 												</Col>
 												<Col md={4}>
-													{item.qty} x ${item.price} = ${(item.qty * item.price).toFixed(2)}
+													{item.qty} x Ksh. {item.price} = Ksh. {(item.qty * item.price).toFixed(2)}
 												</Col>
 											</Row>
 										</ListGroup.Item>
@@ -101,25 +101,25 @@ export default function PlaceOrderScreen({ history }) {
 							<ListGroup.Item>
 								<Row>
 									<Col>Items: </Col>
-									<Col>${cart.itemsPrice}</Col>
+									<Col>Ksh. {cart.itemsPrice}</Col>
 								</Row>
 							</ListGroup.Item>
 							<ListGroup.Item>
 								<Row>
 									<Col>Shipping: </Col>
-									<Col>${cart.shippingPrice}</Col>
+									<Col>Ksh. {cart.shippingPrice}</Col>
 								</Row>
 							</ListGroup.Item>
 							<ListGroup.Item>
 								<Row>
 									<Col>Tax: </Col>
-									<Col>${cart.taxPrice}</Col>
+									<Col>Ksh. {cart.taxPrice}</Col>
 								</Row>
 							</ListGroup.Item>
 							<ListGroup.Item>
 								<Row>
 									<Col>Total: </Col>
-									<Col>${cart.totalPrice}</Col>
+									<Col>Ksh. {cart.totalPrice}</Col>
 								</Row>
 							</ListGroup.Item>
 							<ListGroup.Item>

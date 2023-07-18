@@ -49,7 +49,7 @@ export default function CartScreen({ match, location, history }) {
 									<Col md={3}>
 										<Link to={`/product/${item.product}`}>{item.name}</Link>
 									</Col>
-									<Col md={2}>${item.price}</Col>
+									<Col md={2}>Ksh. {item.price}</Col>
 									<Col md={3}>
 										<Col className="my-1">
 											<div>
@@ -90,7 +90,7 @@ export default function CartScreen({ match, location, history }) {
 					<ListGroup variant='flush'>
 						<ListGroup.Item>
 							<h2>Subtotal: ({cartItems.reduce((acc, item) => acc + item.qty, 0)}) Items</h2>
-							${cartItems.reduce((acc, item) => acc + item.qty * item.price, 0)}
+							Ksh. {cartItems.reduce((acc, item) => acc + item.qty * item.price, 0)}
 						</ListGroup.Item>
 					</ListGroup>
 
